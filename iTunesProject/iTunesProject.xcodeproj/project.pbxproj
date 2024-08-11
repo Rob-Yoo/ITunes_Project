@@ -15,8 +15,14 @@
 		CC37821C2C64CE7E00E8E269 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC37821B2C64CE7E00E8E269 /* SearchViewModel.swift */; };
 		CC37821F2C64D6AC00E8E269 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC37821E2C64D6AC00E8E269 /* NetworkManager.swift */; };
 		CC3782232C64D82400E8E269 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CC3782222C64D82400E8E269 /* Kingfisher */; };
-		CC3782252C64DC9F00E8E269 /* AppResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3782242C64DC9F00E8E269 /* AppResponseDTO.swift */; };
-		CC3782272C64DF4600E8E269 /* SearchRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3782262C64DF4600E8E269 /* SearchRootView.swift */; };
+		CC3782252C64DC9F00E8E269 /* AppResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3782242C64DC9F00E8E269 /* AppResponse.swift */; };
+		CC3782292C673AC500E8E269 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3782282C673AC500E8E269 /* SearchResultTableViewCell.swift */; };
+		CC37822C2C67579F00E8E269 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = CC37822B2C67579F00E8E269 /* Toast */; };
+		CC37822E2C678AAD00E8E269 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC37822D2C678AAD00E8E269 /* AppDetailViewController.swift */; };
+		CC3782322C678FD300E8E269 /* AppDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3782312C678FD300E8E269 /* AppDetailViewModel.swift */; };
+		CC3782352C67925800E8E269 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3782342C67925800E8E269 /* UIViewController+Rx.swift */; };
+		CC3782372C687E5000E8E269 /* AppDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3782362C687E5000E8E269 /* AppDetailHeaderView.swift */; };
+		CC3782392C68827D00E8E269 /* ReleaseContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3782382C68827D00E8E269 /* ReleaseContentView.swift */; };
 		CCCCCDE82C64C55B003FF69A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCCDE72C64C55B003FF69A /* AppDelegate.swift */; };
 		CCCCCDEA2C64C55B003FF69A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCCDE92C64C55B003FF69A /* SceneDelegate.swift */; };
 		CCCCCDEC2C64C55B003FF69A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCCDEB2C64C55B003FF69A /* SearchViewController.swift */; };
@@ -27,8 +33,13 @@
 /* Begin PBXFileReference section */
 		CC37821B2C64CE7E00E8E269 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		CC37821E2C64D6AC00E8E269 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		CC3782242C64DC9F00E8E269 /* AppResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResponseDTO.swift; sourceTree = "<group>"; };
-		CC3782262C64DF4600E8E269 /* SearchRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRootView.swift; sourceTree = "<group>"; };
+		CC3782242C64DC9F00E8E269 /* AppResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResponse.swift; sourceTree = "<group>"; };
+		CC3782282C673AC500E8E269 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		CC37822D2C678AAD00E8E269 /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
+		CC3782312C678FD300E8E269 /* AppDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewModel.swift; sourceTree = "<group>"; };
+		CC3782342C67925800E8E269 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		CC3782362C687E5000E8E269 /* AppDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailHeaderView.swift; sourceTree = "<group>"; };
+		CC3782382C68827D00E8E269 /* ReleaseContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseContentView.swift; sourceTree = "<group>"; };
 		CCCCCDE42C64C55B003FF69A /* iTunesProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCCCCDE72C64C55B003FF69A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCCCCDE92C64C55B003FF69A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +59,7 @@
 				CC3782142C64C6F100E8E269 /* SnapKit in Frameworks */,
 				CC3782112C64C6DF00E8E269 /* RxSwift in Frameworks */,
 				CC37820F2C64C6DF00E8E269 /* RxCocoa in Frameworks */,
+				CC37822C2C67579F00E8E269 /* Toast in Frameworks */,
 				CC3782172C64C6FC00E8E269 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,9 +70,9 @@
 		CC37820B2C64C60300E8E269 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				CCCCCDEB2C64C55B003FF69A /* SearchViewController.swift */,
-				CC37821B2C64CE7E00E8E269 /* SearchViewModel.swift */,
-				CC3782262C64DF4600E8E269 /* SearchRootView.swift */,
+				CC3782302C678FC200E8E269 /* DetailScreen */,
+				CC37822F2C678FAC00E8E269 /* SearchScreen */,
+				CC3782342C67925800E8E269 /* UIViewController+Rx.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -76,9 +88,30 @@
 		CC3782202C64D70600E8E269 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				CC3782242C64DC9F00E8E269 /* AppResponseDTO.swift */,
+				CC3782242C64DC9F00E8E269 /* AppResponse.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		CC37822F2C678FAC00E8E269 /* SearchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CCCCCDEB2C64C55B003FF69A /* SearchViewController.swift */,
+				CC37821B2C64CE7E00E8E269 /* SearchViewModel.swift */,
+				CC3782282C673AC500E8E269 /* SearchResultTableViewCell.swift */,
+			);
+			path = SearchScreen;
+			sourceTree = "<group>";
+		};
+		CC3782302C678FC200E8E269 /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CC37822D2C678AAD00E8E269 /* AppDetailViewController.swift */,
+				CC3782312C678FD300E8E269 /* AppDetailViewModel.swift */,
+				CC3782362C687E5000E8E269 /* AppDetailHeaderView.swift */,
+				CC3782382C68827D00E8E269 /* ReleaseContentView.swift */,
+			);
+			path = DetailScreen;
 			sourceTree = "<group>";
 		};
 		CCCCCDDB2C64C55B003FF69A = {
@@ -135,6 +168,7 @@
 				CC3782162C64C6FC00E8E269 /* Then */,
 				CC3782192C64C71600E8E269 /* Alamofire */,
 				CC3782222C64D82400E8E269 /* Kingfisher */,
+				CC37822B2C67579F00E8E269 /* Toast */,
 			);
 			productName = iTunesProject;
 			productReference = CCCCCDE42C64C55B003FF69A /* iTunesProject.app */;
@@ -170,6 +204,7 @@
 				CC3782152C64C6FC00E8E269 /* XCRemoteSwiftPackageReference "Then" */,
 				CC3782182C64C71600E8E269 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				CC3782212C64D82400E8E269 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				CC37822A2C67579F00E8E269 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = CCCCCDE52C64C55B003FF69A /* Products */;
 			projectDirPath = "";
@@ -197,13 +232,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC3782272C64DF4600E8E269 /* SearchRootView.swift in Sources */,
+				CC3782352C67925800E8E269 /* UIViewController+Rx.swift in Sources */,
 				CCCCCDEC2C64C55B003FF69A /* SearchViewController.swift in Sources */,
-				CC3782252C64DC9F00E8E269 /* AppResponseDTO.swift in Sources */,
+				CC3782392C68827D00E8E269 /* ReleaseContentView.swift in Sources */,
+				CC3782292C673AC500E8E269 /* SearchResultTableViewCell.swift in Sources */,
+				CC3782252C64DC9F00E8E269 /* AppResponse.swift in Sources */,
+				CC37822E2C678AAD00E8E269 /* AppDetailViewController.swift in Sources */,
+				CC3782322C678FD300E8E269 /* AppDetailViewModel.swift in Sources */,
 				CCCCCDE82C64C55B003FF69A /* AppDelegate.swift in Sources */,
 				CC37821F2C64D6AC00E8E269 /* NetworkManager.swift in Sources */,
 				CC37821C2C64CE7E00E8E269 /* SearchViewModel.swift in Sources */,
 				CCCCCDEA2C64C55B003FF69A /* SceneDelegate.swift in Sources */,
+				CC3782372C687E5000E8E269 /* AppDetailHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +508,14 @@
 				minimumVersion = 7.12.0;
 			};
 		};
+		CC37822A2C67579F00E8E269 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -500,6 +548,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CC3782212C64D82400E8E269 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		CC37822B2C67579F00E8E269 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC37822A2C67579F00E8E269 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

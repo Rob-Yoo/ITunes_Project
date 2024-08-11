@@ -7,18 +7,18 @@
 
 import Foundation
 
-struct AppResponseDTO: Decodable {
+struct AppResponse: Decodable {
     let resultCount: Int
-    let results: [AppDTO]
+    let results: [App]
 }
 
-struct AppDTO: Decodable {
+struct App: Decodable {
     let appIcon: String
     let appName: String
     let developerName: String
     let version: String
     let description: String
-    let releaseNotes: String
+    let releaseNotes: String?
     
     enum CodingKeys: String, CodingKey {
         case appIcon = "artworkUrl100"

@@ -9,15 +9,15 @@ import Alamofire
 import RxSwift
 
 enum NetworkManager {
-    static func requestAPI(query: String) -> Observable<[AppDTO]> {
+    static func requestAPI(query: String) -> Observable<[App]> {
         let url = "https://itunes.apple.com/search?term=\(query)&country=kr&entity=software&limit=50&lang=ko_kr"
         
-        let observable = Observable<[AppDTO]>.create { observer in
+        let observable = Observable<[App]>.create { observer in
             let task = Task {
                 
                 let result = await AF.request(url)
                     .validate()
-                    .serializingDecodable(AppResponseDTO.self).result
+                    .serializingDecodable(AppResponse.self).result
                 
                 switch result {
                 case .success(let value):
